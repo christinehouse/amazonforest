@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {background-image: url("amazon.jpg"); 
+                background-repeat: no-repeat; 
+                background-size: cover;
+                cursor: url("flamefire.cur");
+                }
+            #fire {
+                position: absolute;
+                bottom: 370px;
+                right: 500px;
+                transition-duration: 5s;
+            }
+            #fire:hover {
+                filter:hue-rotate(90deg);
+                width: 50%;
+            }
+            .title {
+                color:rgb(255, 0, 0);
+                background-color: rgba(28, 28, 211, 0.5);
+                text-align: center;
+            }
+            #videoplayer {
+                position: absolute;
+                top: 20%;
+                left: 40%;
+                width: 600px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="title">RED</h1>
+        <audio controls>
+            <source src="castillo.wav" type="audio/wav">
+        </audio>
+        <iframe id="videoplayer" src="https://player.vimeo.com/video/573186452?h=3bd0443fd1" width="640" height="485" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+        <br>
+        <img src="fire.png" alt="flames and smoke" id="fire" width="20%">
+        <br>
+        <a href="index.html">Home</a>
+       
+    </body>
+</html>
